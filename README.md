@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h1>To Do List</h1>
+<h1>Leaderboard</h1>
 
 # 📗 Table of Contents
 
@@ -18,8 +18,8 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 ToDO List-Project: To Do List <a name="about-project"></a>
-**ToDoList-App** This is the tasks website where you create, update read and remove task from a list.
+# 📖 Leaderboard-Project: Leaderboard <a name="about-project"></a>
+**ToDoList-App** This is the leaderbord website where you create and submit person detail and score details on the page.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -27,6 +27,7 @@
     CSS
     Javascript
     ES6
+    webpack
 
 
 
@@ -95,7 +96,7 @@ It will be deployed after merge
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement add function and remove 
+- Implement webpack 
 - Implement ES6 modules
 
 
@@ -108,7 +109,7 @@ It will be deployed after merge
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/wolterbwambale/To-do-ist/issues/).
+Feel free to check the [issues page]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
