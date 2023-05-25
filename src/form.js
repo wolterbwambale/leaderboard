@@ -39,7 +39,6 @@ export const createForm = () => {
 
 export const submitScore = async (name, score) => {
   const resource = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
-
   try {
     const response = await fetch(resource, {
       method: 'POST',
@@ -47,12 +46,12 @@ export const submitScore = async (name, score) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ user: name, score }),
-    });
 
+    });
     if (response.ok) {
       const data = await response.json();
       console.log('Score submitted:', data);
-      refreshScores();
+      refreshScores(data);
     } else {
       console.error('Error:', response.status);
     }

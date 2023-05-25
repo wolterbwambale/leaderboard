@@ -13,9 +13,8 @@ form.addEventListener('submit', (e) => {
   submitScore(name, score);
   form.reset();
 });
-displayScores();
 
-const refreshButton = document.getElementById('refreshButton');
-refreshButton.addEventListener('click', () => {
+document.getElementById('refreshButton').addEventListener('click', () => {
   refreshScores();
 });
+displayScores();
