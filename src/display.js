@@ -1,10 +1,9 @@
 /* eslint-disable */
-   const displayScores = (scores) => {
+    const displayScores = (scores) => {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = '';
   
     if (!scores || !scores.result) {
-      // Handle the case when scores or scores.result is undefined
       const errorDiv = document.createElement('div');
       errorDiv.textContent = 'No scores available';
       resultsDiv.appendChild(errorDiv);
@@ -43,14 +42,19 @@
     table.appendChild(tableBody);
     resultsDiv.appendChild(table);
   
+    
     nameHeader.style.width = '5%'; 
     scoreHeader.style.width = '70%'; 
   
     const tableRows = table.getElementsByTagName('tr');
     for (let i = 0; i < tableRows.length; i++) {
       const rowCells = tableRows[i].getElementsByTagName('td');
-      rowCells[0].style.width = '5%'; 
-      rowCells[1].style.width = '70%';
+      if (rowCells.length > 0) {
+        rowCells[0].style.width = '5%'; 
+      }
+      if (rowCells.length > 1) {
+        rowCells[1].style.width = '70%'; 
+      }
     }
   };
   
