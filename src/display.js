@@ -41,7 +41,22 @@
   
     table.appendChild(tableBody);
     resultsDiv.appendChild(table);
+  
+    
+    nameHeader.style.width = '5%'; 
+    scoreHeader.style.width = '70%'; 
+  
+    const tableRows = table.getElementsByTagName('tr');
+    for (let i = 0; i < tableRows.length; i++) {
+      const rowCells = tableRows[i].getElementsByTagName('td');
+      if (rowCells.length > 0) {
+        rowCells[0].style.width = '5%'; 
+      }
+      if (rowCells.length > 1) {
+        rowCells[1].style.width = '70%'; 
+      }
+    }
   };
   
-export default displayScores;
+  export default displayScores;
   
